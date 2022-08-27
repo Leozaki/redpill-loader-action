@@ -20,6 +20,11 @@ jobs:
         id: build-ds918-70
         run: |
             bash build-ds918-7.0.1.sh
+            
+      - name: Build DS918+ 6.2.4
+        id: build-ds918-624
+        run: |
+            bash ds918-6.2.4.sh
 
       - name: Archive DS3615xs 7.0.1 loader image
         uses: actions/upload-artifact@v2
